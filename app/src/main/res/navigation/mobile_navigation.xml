@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ru.mirea.apasov.mireaproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="ru.mirea.apasov.mireaproject.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="ru.mirea.apasov.mireaproject.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_browser"
+        android:name="ru.mirea.apasov.mireaproject.ui.browser.BrowserFragment"
+        android:label="Browser"
+        tools:layout="@layout/fragment_browser"
+        />
+    <fragment
+        android:id="@+id/nav_calculator"
+        android:name="ru.mirea.apasov.mireaproject.CalculateFragment"
+        android:label="Calculator"
+        tools:layout="@layout/fragment_calculate" />
+    <fragment
+        android:id="@+id/nav_music_player"
+        android:name="ru.mirea.apasov.mireaproject.MusicPlayerFragment"
+        android:label="Music Player"
+        tools:layout="@layout/fragment_music_player" />
+    <fragment
+        android:id="@+id/nav_new_settings"
+        android:name="ru.mirea.apasov.mireaproject.NewSettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_new_settings" />
+    <fragment
+        android:id="@+id/nav_weather_a_p_i"
+        android:name="ru.mirea.apasov.mireaproject.WeatherAPI"
+        android:label="Weather"
+        tools:layout="@layout/fragment_weather_a_p_i" />
+</navigation>

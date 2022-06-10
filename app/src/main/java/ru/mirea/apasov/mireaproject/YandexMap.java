@@ -29,7 +29,6 @@ import com.yandex.mapkit.map.InputListener;
 import com.yandex.mapkit.map.Map;
 import com.yandex.mapkit.map.MapObjectCollection;
 import com.yandex.mapkit.map.PlacemarkMapObject;
-import com.yandex.mapkit.map.SizeChangedListener;
 import com.yandex.mapkit.mapview.MapView;
 import com.yandex.mapkit.user_location.UserLocationLayer;
 import com.yandex.mapkit.user_location.UserLocationObjectListener;
@@ -188,7 +187,7 @@ public class YandexMap extends Fragment implements UserLocationObjectListener, G
         PlacemarkMapObject mark = mapObjects.addPlacemark(place,
                 ImageProvider.fromResource(requireContext(),
                         R.drawable.metka));
-        mark.setUserData(new Information(name, description, address));
+        mark.setUserData(new MarkInfo(name, description, address));
         mark.addTapListener((mapObject, point) -> {
             Toast.makeText(requireContext(),
                     (mapObject.getUserData().toString()),

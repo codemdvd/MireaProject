@@ -31,5 +31,11 @@
         <item
             android:id="@+id/nav_weather_a_p_i"
             android:title="@string/menu_weather" />
+        <item
+            android:id="@+id/nav_map"
+            android:title="@string/menu_map" />
+        <item
+            android:id="@+id/nav_audio_rec"
+            android:title="@string/menu_audio_rec" />
     </group>
 </menu>

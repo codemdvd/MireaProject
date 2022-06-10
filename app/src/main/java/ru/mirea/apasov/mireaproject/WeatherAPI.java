@@ -1,6 +1,5 @@
 package ru.mirea.apasov.mireaproject;
 
-//import android.app.Fragment;
 import androidx.fragment.app.Fragment;
 import android.content.Context;
 import android.net.ConnectivityManager;

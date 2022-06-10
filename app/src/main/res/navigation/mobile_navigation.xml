@@ -25,27 +25,37 @@
     <fragment
         android:id="@+id/nav_browser"
         android:name="ru.mirea.apasov.mireaproject.ui.browser.BrowserFragment"
-        android:label="Browser"
+        android:label="@string/menu_browser"
         tools:layout="@layout/fragment_browser"
         />
     <fragment
         android:id="@+id/nav_calculator"
         android:name="ru.mirea.apasov.mireaproject.CalculateFragment"
-        android:label="Calculator"
+        android:label="@string/menu_calculator"
         tools:layout="@layout/fragment_calculate" />
     <fragment
         android:id="@+id/nav_music_player"
         android:name="ru.mirea.apasov.mireaproject.MusicPlayerFragment"
-        android:label="Music Player"
+        android:label="@string/menu_music"
         tools:layout="@layout/fragment_music_player" />
     <fragment
         android:id="@+id/nav_new_settings"
         android:name="ru.mirea.apasov.mireaproject.NewSettingsFragment"
-        android:label="Settings"
+        android:label="@string/menu_settings"
         tools:layout="@layout/fragment_new_settings" />
     <fragment
         android:id="@+id/nav_weather_a_p_i"
         android:name="ru.mirea.apasov.mireaproject.WeatherAPI"
-        android:label="Weather"
+        android:label="@string/menu_weather"
         tools:layout="@layout/fragment_weather_a_p_i" />
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="ru.mirea.apasov.mireaproject.YandexMap"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_yandex_map" />
+    <fragment
+        android:id="@+id/nav_audio_rec"
+        android:name="ru.mirea.apasov.mireaproject.AudioRecord"
+        android:label="@string/menu_audio_rec"
+        tools:layout="@layout/fragment_audio_record" />
 </navigation>

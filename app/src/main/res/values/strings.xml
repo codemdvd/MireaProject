@@ -13,8 +13,10 @@
     <string name="menu_browser">Browser</string>
     <string name="menu_music">Music Player</string>
     <string name="menu_calculator">Calculator</string>
+    <string name="menu_map">Yandex Map</string>
     <string name="menu_weather">Weather</string>
     <string name="menu_settings">Settings</string>
+    <string name="menu_audio_rec">Audio Recording</string>
     <string name="label_emailpassword">Email/Password Authentication</string>
     <string name="desc_emailpassword">Use an email and password to authenticate with
 Firebase.</string>

@@ -42,7 +42,16 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_browser, R.id.nav_calculator, R.id.nav_music_player, R.id.nav_new_settings, R.id.nav_weather_a_p_i)
+                R.id.nav_home,
+                R.id.nav_gallery,
+                R.id.nav_slideshow,
+                R.id.nav_browser,
+                R.id.nav_calculator,
+                R.id.nav_music_player,
+                R.id.nav_new_settings,
+                R.id.nav_weather_a_p_i,
+                R.id.nav_map,
+                R.id.nav_audio_rec)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -61,10 +70,5 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
-    }
-    public String getFileName(int rawId) {
-        String fileName = getResources().getString(rawId);
-        File file = new File(fileName);
-        return file.getName();
     }
 }
